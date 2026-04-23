@@ -1,4 +1,4 @@
-# Programación Avanzada para grandes volumenes de datos: Trabajo práctico final
+# Programación avanzada para grandes volumenes de datos: Trabajo práctico final
 Maestía en Ciencia de Datos. Año 2026.
 
 Estudiantes: Aquino, Alexia; Ramognino, Lorenzo y Tamis, Josefina.
