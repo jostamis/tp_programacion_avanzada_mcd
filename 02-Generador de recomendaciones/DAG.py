@@ -28,9 +28,9 @@ def leer_csv(bucket, file_name):
 
 def obtener_archivos(**context):
     return {
-        'ads_views_path': "datos_crudos/ads_views.csv",
-        'product_views_path': "datos_crudos/product_views.csv",
-        'advertiser_ids_path': "datos_crudos/advertiser_ids.csv"
+        'ads_views_path': "datos_crudos/ads_views",
+        'product_views_path': "datos_crudos/product_views",
+        'advertiser_ids_path': "datos_crudos/advertiser_ids"
     }
 
 def subir_csv(bucket, df, file_name):
@@ -198,7 +198,7 @@ def write_to_db(**context):
 
 with DAG(
     dag_id='adtech_dag',
-    schedule_interval='@daily',
+    schedule='@daily',
     start_date=datetime.datetime(2026, 4, 18),
     catchup=True
 ) as dag:
